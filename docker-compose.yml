@@ -4,12 +4,12 @@ services:
         build: .
         image: ubuntu-nginx-runit
         container_name: ubuntu-nginx-runit
-        network_mode: host
         volumes:
             - ./rootfs/etc/php/7.1/fpm/php-fpm.conf:/etc/php/7.1/fpm/php-fpm.conf
             - ./rootfs/etc/php/7.1/fpm/pool.d/:/etc/php/7.1/fpm/pool.d/
             - ./rootfs/etc/nginx/sites-enabled/default:/etc/nginx/sites-enabled/default
+            - ./rootfs/var/www/html/index.php:/var/www/html/index.php
         environment:
             TEST: test
         ports:
-            - 8080:80
+            - 8081:80
