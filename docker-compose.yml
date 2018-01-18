@@ -7,8 +7,8 @@ services:
         network_mode: host
         volumes:
             - ./rootfs/etc/service:/etc/service
-            - ./rootfs/etc/php/7.1/fpm/php-fpm.conf:/etc/php/7.1/fpm/php-fpm.conf
-            - ./rootfs/etc/php/7.1/fpm/pool.d/:/etc/php/7.1/fpm/pool.d/
+            - ./rootfs/etc/php/7.0/fpm/php-fpm.conf:/etc/php/7.0/fpm/php-fpm.conf
+            - ./rootfs/etc/php/7.0/fpm/pool.d/:/etc/php/7.0/fpm/pool.d/
         environment:
             TEST: test
         ports:
