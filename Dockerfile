@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG PHP_MINOR_VERSION=5.6
+ARG PHP_MINOR_VERSION=7.2
 
 RUN apt-get update && \
     apt-get install -yqq --no-install-recommends \
