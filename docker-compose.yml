@@ -8,6 +8,7 @@ services:
         volumes:
             - ./rootfs/etc/php/5.6/fpm/php-fpm.conf:/etc/php/5.6/fpm/php-fpm.conf
             - ./rootfs/etc/php/5.6/fpm/pool.d/:/etc/php/5.6/fpm/pool.d/
+            - ./rootfs/etc/nginx/sites-enabled/default:/etc/nginx/sites-enabled/default
         environment:
             TEST: test
         ports:
